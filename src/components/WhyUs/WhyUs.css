@@ -1,0 +1,27 @@
+.why-section{
+    background-image: url("https://cdn.wallpapersafari.com/89/46/txmrM7.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon-size{
+    height: 150px;
+    width: 150px;
+}
+.icon-cart {
+    background-color: rgba(128, 128, 128, 0.13);
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+}
+.cart-row{
+margin-right: 5px;
+}
+.why-title{
+    font-family: monospace;
+    font-weight: 600;
+    color: rgb(62, 86, 223);
+}
+.why-text{
+    font-family: cursive;
+    font-weight: 700;
+}

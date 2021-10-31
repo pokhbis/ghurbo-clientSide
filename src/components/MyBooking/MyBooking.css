@@ -1,0 +1,11 @@
+.item{
+    font-size: 24px;
+    font-weight: 600;
+    list-style: none;
+    padding: 6px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    color:blue;
+    text-decoration: none;
+}

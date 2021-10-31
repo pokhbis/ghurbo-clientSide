@@ -1,0 +1,20 @@
+.booking{
+display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* .booking-form{
+    
+} */
+.booking-form input{
+    display: block;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+}
+.error{
+    color: red;
+}

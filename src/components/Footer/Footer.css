@@ -1,0 +1,36 @@
+.footer-container{
+    background-color: lightskyblue;
+}
+.footer-logo{
+    width: 100px;
+    height: 100px;
+   
+}
+.footer-text{
+    color: white;
+}
+.footer-description{
+    color: white;
+    margin-left: 40px;
+}
+.footer-social-media{
+    list-style: none;
+    font-size: 24px;
+    font-weight: 400;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.icon-img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+/* .footer-btn{
+    color: white;
+    background-color: tomato;
+} */
+.footer-input{
+border-radius: 5px;
+}
+.footer-end{
+    background-color: turquoise;
+}
