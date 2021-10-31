@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import AddTours from './components/AddTours/AddTours';
+import AllTours from './components/AllTours/AllTours';
 import Banner from './components/Banner/Banner';
 // import Comments from './components/Comments/Comments';
 import Booking from './components/Booking/Booking';
@@ -15,6 +16,7 @@ import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Review from './components/Review/Review';
 import Tours from './components/Tours/Tours';
+import UpdateTour from './components/UpdateTour/UpdateTour';
 import WhyUs from './components/WhyUs/WhyUs';
 import AuthProvider from './Context/AuthProvider';
 import initializeAuthentication from './Firebase/firebase.initialize';
@@ -44,6 +46,9 @@ function App() {
             <PrivateRoute path='/booking'>
               <Booking></Booking>
             </PrivateRoute>
+            <Route path='/allTours'>
+              <AllTours></AllTours>
+            </Route>
             <Route path='/whyus'>
               <WhyUs></WhyUs>
             </Route>
@@ -52,6 +57,9 @@ function App() {
             </Route>
             <Route path='/addTours'>
               <AddTours></AddTours>
+            </Route>
+            <Route path='/update/:tourId'>
+              <UpdateTour></UpdateTour>
             </Route>
             <Route path='/myBooking'>
               <MyBooking></MyBooking>

@@ -22,6 +22,7 @@ const Header = () => {
                             <ul className="d-flex align-items-end justify-content-end pt-4 me-5">
                                 <Link to="/home" className="item">Home</Link>
                                 <Link to="/booking" className="item">Booking</Link>
+                                <Link to="/allTours" className="item">AllTours</Link>
                                 <Link to="/review" className="item">Our Stories</Link>
                                 {/* <Link to="/review" className="item">Review</Link> */}
 

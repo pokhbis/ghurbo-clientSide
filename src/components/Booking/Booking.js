@@ -39,7 +39,8 @@ const Booking = () => {
 
 
     const handleBooking = () => {
-        history.push('./bookingSuccess')
+        history.push('./bookingSuccess');
+
     }
     return (
         <div >

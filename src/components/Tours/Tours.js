@@ -49,7 +49,7 @@ const Tours = () => {
                 <div className="services-card mt-5">
                     <div className="row">
                         {
-                            tours.map(tour => <Tour
+                            tours.map((tour, index) => <Tour
                                 key={tour.key}
                                 tour={tour}
                                 handleGoogleLogin={handleGoogleLogin}

@@ -8,6 +8,11 @@ const Tour = (props) => {
     // console.log(props);
     const { title, img, price, description, info } = props.tour;
 
+    const handleGoogleLogin = () => {
+
+    }
+
+
     return (
         <div className="col-md-6 col-lg-4">
             <div className="card p-3 m-2 border border">

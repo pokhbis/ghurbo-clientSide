@@ -4,7 +4,7 @@ import './MyBooking.css';
 const MyBooking = () => {
     return (
         <div>
-            <h3>my booking</h3>
+            <h3 className="p-4">My Booking List: </h3>
         </div>
     );
 };

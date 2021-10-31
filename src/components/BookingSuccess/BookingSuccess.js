@@ -3,7 +3,7 @@ import React from 'react';
 const BookingSuccess = () => {
     return (
         <div>
-            <h3>booking successfull</h3>
+            <h2 className="p-4"> Successfully Booked Your Tourist Destination!</h2>
         </div>
     );
 };
