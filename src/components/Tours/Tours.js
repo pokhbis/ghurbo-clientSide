@@ -24,7 +24,7 @@ const Tours = () => {
 
     useEffect(() => {
 
-        fetch("http://localhost:5000/tours")
+        fetch("https://serene-crag-84506.herokuapp.com/tours")
             .then(res => res.json())
             .then(data => setTours(data))
 

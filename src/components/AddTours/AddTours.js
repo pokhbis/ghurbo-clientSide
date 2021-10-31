@@ -8,7 +8,7 @@ const AddTours = () => {
     const onSubmit = data => {
 
         console.log(data);
-        axios.post('/http://localhost:5000/tours', data)
+        axios.post('https://serene-crag-84506.herokuapp.com/tours', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Tour Added Successfully!');
