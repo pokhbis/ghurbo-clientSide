@@ -1,17 +1,42 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { useHistory } from 'react-router';
-
+import axios from 'axios';
 import useAuth from '../Hook/useAuth';
 import './Booking.css';
 
 const Booking = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
     const { user } = useAuth();
     const history = useHistory();
     const onSubmit = data => {
         console.log(data)
+        axios.post('http://localhost:5000/myBooking', data)
+            .then(res => {
+                if (res.data.insertedId) {
+                    alert('Tour Added Successfully!');
+                    reset();
+                }
+            })
     };
+
+
+
+    // const { register, handleSubmit, reset } = useForm();
+    // const onSubmit = data => {
+    //     console.log(data);
+    //     axios.post('http://localhost:5000/addTours', data)
+    //         .then(res => {
+    //             if (res.data.insertedId) {
+    //                 alert('Tour Added Successfully!');
+    //                 reset();
+    //             }
+    //         })
+    // };
+
+
+
+
 
     const handleBooking = () => {
         history.push('./bookingSuccess')

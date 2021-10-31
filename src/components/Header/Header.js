@@ -28,6 +28,7 @@ const Header = () => {
                                 <span style={{ color: "blue ", fontWeight: "bold", paddingBottom: "10px" }}>{user.displayName}</span>
 
                                 {user?.email && <Link to='/myBooking' className="item" onClick="">MyBooking</Link>}
+                                {user?.email && <Link to='/addTours' className="item" onClick="">AddTours</Link>}
 
                                 {
                                     user?.email ?
