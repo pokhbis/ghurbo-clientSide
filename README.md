@@ -1,19 +1,19 @@
-# Welcome to GHURBO tourism service
+## Welcome to GHURBO tourism service
 
-To visite the Ghurbo website please click [GHURBO](https://ghurbo-client.web.app/).
+To visit the Ghurbo website please click [GHURBO](https://ghurbo-client.web.app/).
 
-## About GHURBO
+### About GHURBO
 
-GHURBO is one of the leading tourism services provider in this country. Our team of experts are always ready to help people to explore new experiences of life during their free time. We provide all around services related to tourism like, planning, budgeting, guide, booking, emergency medical services if necessary etc. With 8+ years of experience we are happy to serve people to enjoy their life fully during vacation. 
+GHURBO is tourism services providing website. Here user can book for a tourist destination. Tourist spot,costing etc related information are also provided here. User can read the review of other people in the review section. If a user book multiple destinations, he/she can see his/her all bookings. Admin can add new destinations. User have to register and log-in into the website for booking.
 
 ### Five Bullet Points About GHURBO
 
 #### 1. This website has been built using React, Bootstrap,Vanilla CSS as front end component. MongoDb and Heroku has been used in back end.
 
-#### 2. This website fulfills all the requirements asked by the P.Hero team.
+#### 2. This website facilitates tourism related services.
 
-#### 3. All codes and components are optimized at the best possible ways.
+#### 3. Clients have to register and stay logged in to get the services.
 
-#### 4. All rights about code, other components and frame works are reserved by the development team.
+#### 4. This website is fully responsive for desktop and mobile platform.
 
-#### 5. User should read all the related documents before using the services of this website. We do not bear any kind of responsibility if monetary fraud happen or quality of services do not meet clients expectations. 
+#### 5. Admin can add new destinations into the popular tours section. 
