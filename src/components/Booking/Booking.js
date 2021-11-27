@@ -11,7 +11,7 @@ const Booking = () => {
     const history = useHistory();
     const onSubmit = data => {
         console.log(data)
-        axios.post('http://localhost:5000/myBooking', data)
+        axios.post('https://serene-crag-84506.herokuapp.com/tours/myBooking', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Tour Added Successfully!');

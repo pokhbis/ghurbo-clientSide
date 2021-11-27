@@ -51,4 +51,4 @@ const Review = () => {
     );
 };
 
-export default Review; <h3>review</h3>
+export default Review;

@@ -9,7 +9,7 @@ const AddTours = () => {
     const history = useHistory();
     const onSubmit = data => {
         console.log(data);
-        fetch("http://localhost:5000/addTours", {
+        fetch("https://serene-crag-84506.herokuapp.com/tours/addTours", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

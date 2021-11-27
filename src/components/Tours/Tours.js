@@ -11,14 +11,15 @@ const Tours = () => {
     const { signInUsingGoogle } = useAuth();
     const location = useLocation();
     const history = useHistory();
+    const { email } = useAuth();
     const redirect_uri = location.state?.from || '/booking';
 
-    const handleGoogleLogin = () => {
-        signInUsingGoogle()
-            .then(result => {
-                history.push(redirect_uri);
-            })
-    }
+    // const handleGoogleLogin = () => {
+    //     signInUsingGoogle()
+    //         .then(result => {
+    //             history.push(redirect_uri);
+    //         })
+    // }
 
     const [tours, setTours] = useState([]);
 
@@ -36,6 +37,21 @@ const Tours = () => {
 
     // }, [])
 
+    const handleBooking = (index) => {
+        console.log(index);
+        const data = tours[index];
+        data.email = email;
+        data.status = "panding"
+        fetch('http://localhost:5000/addBooking', {
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(data),
+        });
+
+    };
+
     return (
         <div>
 
@@ -49,12 +65,33 @@ const Tours = () => {
                 <div className="services-card mt-5">
                     <div className="row">
                         {
-                            tours.map((tour, index) => <Tour
-                                key={tour.key}
-                                tour={tour}
-                                handleGoogleLogin={handleGoogleLogin}
-                            >
-                            </Tour>
+                            tours.map((tour, index) => <div className="col-md-6 col-lg-4">
+                                <div className="card p-3 m-2 border border">
+                                    <div className="">
+                                        <img className="card-img" src={tour.img} alt="" />
+                                    </div>
+                                    <h3>
+                                        {tour.title}
+                                    </h3>
+                                    <h6>Duration: {tour.info}</h6>
+                                    <p>{tour.description}</p>
+                                    <div className="row">
+                                        <div className="col-md-9 col-lg-9">
+                                            <div><Link to='/login'>
+                                                <button className="book-btn" onClick={() => handleBooking(index)}>Book</button>
+                                            </Link>
+                                            </div>
+                                            {/* <div><Link to={`/booking/${tour.title}`}>
+                                        <button className="book-btn" onClick={handleGoogleLogin}>Book</button>
+                                    </Link>
+                                    </div> */}
+
+                                        </div>
+                                        <div className=" tour-price pt-2 col-md-3 col-lg-3"> $ {tour.price}</div>
+
+                                    </div>
+                                </div>
+                            </div>
                             )
                         }
                     </div>

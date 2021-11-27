@@ -7,7 +7,7 @@ const UpdateTour = () => {
     const [isUpdate, setIsUpdated] = useState(null);
     const [tour, setTour] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/singleProduct/${tourId}`)
+        fetch(`https://serene-crag-84506.herokuapp.com/tours/singleProduct/${tourId}`)
             .then((res) => res.json())
             .then((data) => setTour(data));
     }, [tourId, isUpdate]);
@@ -18,7 +18,7 @@ const UpdateTour = () => {
         formState: { errors },
     } = useForm();
     const onSubmit = (data) => {
-        fetch(`http://localhost:5000/update/${tourId}`, {
+        fetch(`https://serene-crag-84506.herokuapp.com/tours/update/${tourId}`, {
             method: "PUT",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),

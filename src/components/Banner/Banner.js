@@ -16,7 +16,7 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Explore The Beauty of Sea!</h3>
+                        <h3>Explore The Beauty of Sea!!</h3>
                         <p>Ocean tourism refers to pleasure travel in which the sea is the primary focus of activities. Ocean tourism comes in many forms including cruises, ecotourism, and fishing expeditions.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -28,7 +28,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Explore The Beauty of Mountain!</h3>
+                        <h3>Explore The Beauty of Mountain!!</h3>
                         <p>Mountain Tourism is limited geographical space such as hills or mountains with distinctive characteristics and  a specific landscape, topography, climate, biodiversity (flora and fauna) and local community.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -40,7 +40,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Explore The Beauty of Mountain!</h3>
+                        <h3>Explore The Beauty of Mountain!!</h3>
                         <p>Mountain Tourism is limited geographical space such as hills or mountains with distinctive characteristics and  a specific landscape, topography, climate, biodiversity (flora and fauna) and local community.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -49,4 +49,4 @@ const Banner = () => {
     );
 };
 
-export default Banner; <h3>banner</h3>
+export default Banner;
